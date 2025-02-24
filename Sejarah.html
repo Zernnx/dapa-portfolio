@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Revolusi Industri 1.0 - 4.0</title>
+    <link rel="stylesheet" href="sejarah.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Homepage</a>
-        </nav>
-    </header>
+    <h1>Revolusi Industri 1.0 Sampai 4.0</h1>
+    
+    <h2>Revolusi Industri 1.0</h2>
+    <p>Revolusi Industri 1.0 terjadi pada akhir abad ke-18, sekitar tahun 1760 hingga 1840. Revolusi ini ditandai dengan peralihan dari tenaga manusia dan hewan ke mesin berbasis tenaga uap dan air. Salah satu inovasi terpenting pada masa ini adalah mesin uap yang dikembangkan oleh James Watt, yang memungkinkan efisiensi lebih tinggi dalam produksi. Revolusi ini membawa perubahan besar dalam sektor manufaktur, pertanian, dan transportasi.</p>
+    <p class="read-more-content">Efek dari Revolusi Industri 1.0 adalah meningkatnya produksi barang dengan harga lebih murah dan tersedia lebih luas bagi masyarakat. Selain itu, terjadi urbanisasi besar-besaran karena banyaknya orang yang berpindah dari desa ke kota untuk bekerja di pabrik.</p>
+    <button class="read-more-btn">Read More</button>
+    
+    <h2>Revolusi Industri 2.0</h2>
+    <p>Revolusi Industri 2.0 terjadi sekitar tahun 1870 hingga awal abad ke-20. Revolusi ini ditandai dengan penggunaan listrik dalam industri, serta perkembangan sistem produksi massal yang dipopulerkan oleh Henry Ford melalui konsep jalur perakitan (assembly line). Hal ini memungkinkan produksi barang dalam jumlah besar dengan biaya yang lebih rendah.</p>
+    <p class="read-more-content">Selain listrik, perkembangan transportasi seperti kereta api dan mobil juga menjadi faktor penting dalam Revolusi Industri 2.0. Kemajuan ini memberikan dampak besar pada berbagai sektor, termasuk komunikasi yang berkembang dengan adanya telepon dan telegraf.</p>
+    <button class="read-more-btn">Read More</button>
+    
+    <h2>Revolusi Industri 3.0</h2>
+    <p>Revolusi Industri 3.0 dimulai pada pertengahan abad ke-20, sekitar tahun 1950-an. Revolusi ini ditandai dengan otomatisasi dalam industri melalui penggunaan komputer, sistem elektronik, dan robotika. Teknologi ini memungkinkan peningkatan efisiensi, akurasi, dan kecepatan dalam produksi.</p>
+    <p class="read-more-content">Selain dalam industri manufaktur, komputer juga mulai digunakan dalam berbagai bidang seperti pendidikan, kesehatan, dan komunikasi. Munculnya internet pada akhir abad ke-20 semakin mempercepat transformasi digital di berbagai aspek kehidupan.</p>
+    <button class="read-more-btn">Read More</button>
+    
+    <h2>Revolusi Industri 4.0</h2>
+    <p>Revolusi Industri 4.0 adalah era digital yang berkembang pesat sejak awal abad ke-21. Revolusi ini ditandai dengan penggunaan teknologi canggih seperti kecerdasan buatan (AI), Internet of Things (IoT), big data, komputasi awan, dan sistem siber-fisik.</p>
+    <p class="read-more-content">Dalam industri, konsep smart factory mulai diterapkan, di mana mesin dan sistem produksi dapat berkomunikasi satu sama lain secara otomatis untuk meningkatkan efisiensi. Selain itu, penggunaan data yang besar (big data) memungkinkan analisis yang lebih akurat untuk pengambilan keputusan yang lebih baik.</p>
+    <p class="read-more-content">Teknologi dalam Revolusi Industri 4.0 tidak hanya mempengaruhi sektor industri, tetapi juga berbagai aspek kehidupan manusia, seperti layanan kesehatan yang lebih canggih, pendidikan berbasis digital, serta meningkatnya peran teknologi dalam kehidupan sehari-hari.</p>
+    <button class="read-more-btn">Read More</button>
+    
+    <h2>Sumber</h2>
+    <p>1. Klaus Schwab - The Fourth Industrial Revolution (2016)</p>
+    <p>2. Jeremy Rifkin - The Third Industrial Revolution (2011)</p>
+    <p>3. Mokyr, Joel - The Lever of Riches: Technological Creativity and Economic Progress (1990)</p>
+    <p>4. Laporan World Economic Forum tentang Revolusi Industri 4.0</p>
 
-    <section id="pertama">
-        
-
-    </section>
+    <script>
+        document.querySelectorAll('.read-more-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.previousElementSibling;
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                button.textContent = content.style.display === 'none' ? 'Read More' : 'Read Less';
+            });
+        });
+    </script>
 </body>
 </html>
